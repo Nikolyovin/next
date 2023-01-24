@@ -11,6 +11,7 @@ const Reminder = () => {
 				<Image
 					className="absolute left-0 z-0 object-cover h-full w-full"
 					src={photo}
+					alt="fon"
 				/>
 				<div className="relative pt-[40px] z-10 pb-[60px] px-4 ">
 					<h3 className="title flex-1 text-white">
