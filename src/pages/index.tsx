@@ -7,5 +7,12 @@ import HomeContainer from '@/components/Home/Home'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
-  return <HomeContainer />
+  return (
+    <div>
+      <Head>
+        <title>Тату Рязань</title>
+      </Head>
+      <HomeContainer />
+    </div>
+  )
 }

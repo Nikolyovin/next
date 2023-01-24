@@ -1,3 +1,68 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .bggImage {
+        background-image: url('https://img.freepik.com/free-photo/tropical-green-leaves-background_53876-88891.jpg');
+    }
+
+    .slideImg {
+        @apply object-cover rounded-2xl;
+    }
+
+    .amatic {
+        font-family: 'Amatic SC', cursive;
+    }
+
+    .amaticBold {
+        font-family: 'Sofia Sans Extra Condensed', sans-serif;
+    }
+
+    .robotoCondensed {
+        font-family: 'Roboto Condensed', sans-serif;
+    }
+
+    body {
+        font-size: 16px;
+        font-family: 'Roboto Condensed', sans-serif;
+    }
+
+    .title {
+        @apply font-bold text-[42px];
+        font-family: 'Amatic SC', cursive;
+    }
+
+    .beforeTattooText {
+        @apply text-slate-600 font-bold  pb-3  text-[18px];
+    }
+}
+
+/*swiper*/
+
+.swiper {
+    z-index: 0 !important;
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: white !important;
+}
+
+.swiper-pagination-progressbar-fill {
+    background-color: white !important;
+}
+
+.swiper-pagination-progressbar {
+    top: auto !important;
+    bottom: 0 !important;
+}
+
+.swiper-scrollbar-drag {
+    background-color: white !important;
+}
+
+.swiper-slide-reminder {
+    padding-bottom: 30px;
+}
