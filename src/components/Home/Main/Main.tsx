@@ -1,4 +1,5 @@
 import React from 'react'
+import NeedEntry from './NeedEntry/NeedEntry'
 import Portfolio from './Potfolio/Portfolio'
 import Profile from './Profile/Profile'
 
@@ -7,8 +8,8 @@ const Main = () => {
     <main className='w-full '>
       <Profile />
       <Portfolio />
-      {/* <ContactMeTop />
-            <BeforeTattoo />
+      <NeedEntry />
+      {/*<BeforeTattoo />
             <AnswersOnQuestions />
             <Reminder />
             <ContactMeBottom /> */}
