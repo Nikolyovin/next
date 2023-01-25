@@ -34,7 +34,7 @@
     }
 
     .beforeTattooText {
-        @apply text-slate-600 font-bold  pb-3  text-[18px];
+        @apply text-slate-600 font-bold  pb-3  text-[16px];
     }
 }
 

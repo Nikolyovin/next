@@ -11,65 +11,64 @@ import 'swiper/css/pagination'
 import Image, { StaticImageData } from 'next/image'
 
 interface ISlide {
-	src: StaticImageData
+  src: StaticImageData
 }
 
 const SlideShow = () => {
-	const arrSlides: ISlide[] = [
-		{
-			src: img2,
-		},
-		{
-			src: img3,
-		},
-		{
-			src: img5,
-		},
-		{
-			src: img6,
-		},
-		{
-			src: img7,
-		},
-	]
+  const arrSlides: ISlide[] = [
+    {
+      src: img3,
+    },
+    {
+      src: img2,
+    },
+    {
+      src: img5,
+    },
+    {
+      src: img6,
+    },
+    {
+      src: img7,
+    },
+  ]
 
-	return (
-		<Swiper
-			modules={[Lazy, Pagination, EffectFade, Autoplay, Lazy]}
-			lazy={true}
-			spaceBetween={30}
-			slidesPerView={1}
-			// navigation
-			// effect='fade'
-			// autoplay={{ delay: 1000, waitForTransition: false, disableOnInteraction: false }}
-			// fadeEffect={{ crossFade: true }}
-			pagination={{
-				dynamicBullets: true,
-				clickable: true,
-			}}
-			// scrollbar={{ draggable: true }}
-			onSlideChange={() => console.log('slide change')}
-			onSwiper={(swiper) => console.log(swiper)}
-		>
-			{arrSlides.map(({ src }, index) => (
-				<SwiperSlide key={index}>
-					{/* <img
+  return (
+    <Swiper
+      modules={[Lazy, Pagination, EffectFade, Autoplay, Lazy]}
+      lazy={true}
+      spaceBetween={30}
+      slidesPerView={1}
+      breakpoints={{
+        640: { slidesPerView: 3 },
+      }}
+      pagination={{
+        dynamicBullets: true,
+        clickable: true,
+      }}
+      // scrollbar={{ draggable: true }}
+      onSlideChange={() => console.log('slide change')}
+      onSwiper={(swiper) => console.log(swiper)}
+    >
+      {arrSlides.map(({ src }, index) => (
+        <SwiperSlide key={index}>
+          {/* <img
             className='slideImg z-0 h-full w-full border-4 border-white swiper-lazy'
             data-src={src.src}
             // alt='photo'
           /> */}
-					<Image
-						className="slideImg z-0 border-4 border-white"
-						width={358}
-						height={540}
-						src={src}
-						alt="photo"
-					/>
-					{/* <div className='swiper-lazy-preloader swiper-lazy-preloader-white '></div> */}
-				</SwiperSlide>
-			))}
-		</Swiper>
-	)
+          <Image
+            className='slideImg z-0 border-4 border-white'
+            width={358}
+            height={540}
+            src={src}
+            alt='photo'
+          />
+          {/* <div className='swiper-lazy-preloader swiper-lazy-preloader-white '></div> */}
+        </SwiperSlide>
+      ))}
+    </Swiper>
+  )
 }
 
 export default SlideShow
