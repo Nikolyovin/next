@@ -18,31 +18,33 @@ const HeaderDesktop = () => {
     return (
         <>
             {/* <header className='bg-slate-400 flex px-3 justify-end items-center w-full h-[50px] hidden md:block'></header> */}
-            <AppBar className='px-3 w-full h-[50px] hidden md:block' position='relative' color='inherit'>
-                <div className='flex justify-end w-full h-full'>
-                    <IconButton className='' onClick={handleClick} sx={{ p: 0 }}>
-                        <MenuIcon className='' sx={{ fontSize: 34 }} />
-                    </IconButton>
-                </div>
-                <Menu
-                    sx={{ right: 0 }}
-                    variant='selectedMenu'
-                    anchorEl={anchorEl}
-                    open={open}
-                    onClose={handleClose}
-                    MenuListProps={{
-                        'aria-labelledby': 'basic-button'
-                    }}
-                >
-                    {arrButtons.map(({ title, href }) => (
-                        <Link to={href} smooth={true} duration={500} onClick={handleClose}>
-                            <MenuItem key={title} sx={{ fontSize: '22px' }}>
-                                <p className='amatic bold text-4xl'>{title}</p>
-                            </MenuItem>
-                        </Link>
-                    ))}
-                </Menu>
-            </AppBar>
+            <div className='hidden md:block'>
+                <AppBar className='px-3 w-full h-[50px] ' position='relative' color='inherit'>
+                    <div className='flex justify-end w-full h-full'>
+                        <IconButton className='' onClick={handleClick} sx={{ p: 0 }}>
+                            <MenuIcon className='' sx={{ fontSize: 34 }} />
+                        </IconButton>
+                    </div>
+                    <Menu
+                        sx={{ right: 0 }}
+                        variant='selectedMenu'
+                        anchorEl={anchorEl}
+                        open={open}
+                        onClose={handleClose}
+                        MenuListProps={{
+                            'aria-labelledby': 'basic-button'
+                        }}
+                    >
+                        {arrButtons.map(({ title, href }) => (
+                            <Link to={href} smooth={true} duration={500} onClick={handleClose}>
+                                <MenuItem key={title} sx={{ fontSize: '22px' }}>
+                                    <p className='amatic bold text-4xl'>{title}</p>
+                                </MenuItem>
+                            </Link>
+                        ))}
+                    </Menu>
+                </AppBar>
+            </div>
         </>
     )
 }
