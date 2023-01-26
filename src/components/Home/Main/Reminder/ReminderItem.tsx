@@ -1,23 +1,25 @@
-import React from 'react'
+import React, { FC } from 'react'
+import { ReminderType } from './ReminderSlideShow'
 
-const ReminderItem = () => {
-	return (
-		// <div className='h-full'>
-		<div className="h-full p-5 mt-3 rounded-lg border-dotted border-4 border-white ">
-			<h6 className="text-center text-4xl font-bold mb-3 text-white amatic">
-				1. Первые шаги
-			</h6>
-			<p className="text-end  font-bold text-white ">
-				Собор Василия Блаженного или Покрова Пресвятой Богородицы что на рву или
-				Живоначальной Троицы что на рву? Когда стали называть этот собор именем
-				юродивого? Разберём детально этот мемориал, ведь как нам говорят
-				историки его установили в честь победы над Казанским Ханством и это не 1
-				церковь, а целых 9 церквей, хотя было время что число церквей доходило
-				до 18.
-			</p>
-		</div>
-		// </div>
-	)
+type PropsType = {
+  props: ReminderType
+}
+
+const ReminderItem: FC<PropsType> = ({ props }) => {
+  const { text, title, text1, text2, text3 } = props
+  return (
+    // <div className='h-full'>
+    <div className='h-full p-5 mt-3 rounded-lg border-dotted border-4 border-white min-h-[300px]'>
+      <h6 className='text-center text-4xl font-bold mb-3 text-white amatic'>
+        {title}
+      </h6>
+      <p className='  font-bold text-white h-full mb-2 '>{text}</p>
+      <p className='  font-bold text-white h-full mb-2 text-[14px]'>{text1}</p>
+      <p className='  font-bold text-white h-full mb-2 text-[14px]'>{text2}</p>
+      <p className='  font-bold text-white h-full mb-2 text-[14px]'>{text3}</p>
+    </div>
+    // </div>
+  )
 }
 
 export default ReminderItem
