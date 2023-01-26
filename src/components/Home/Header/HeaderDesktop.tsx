@@ -38,7 +38,7 @@ const HeaderDesktop = () => {
                         {arrButtons.map(({ title, href }) => (
                             <Link to={href} smooth={true} duration={500} onClick={handleClose}>
                                 <MenuItem key={title} sx={{ fontSize: '22px' }}>
-                                    <p className='amatic bold text-4xl'>{title}</p>
+                                    <p className='amatic w-[100vh] bold text-4xl'>{title}</p>
                                 </MenuItem>
                             </Link>
                         ))}
