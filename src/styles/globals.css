@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 @layer components {
-    .bggImage {
+    /* .bggImage {
         background-image: url('https://img.freepik.com/free-photo/tropical-green-leaves-background_53876-88891.jpg');
-    }
+    } */
 
     .slideImg {
         @apply object-cover rounded-2xl;
@@ -15,16 +15,17 @@
         font-family: 'Amatic SC', cursive;
     }
 
-    .amaticBold {
+    /* .amaticBold {
         font-family: 'Sofia Sans Extra Condensed', sans-serif;
-    }
+    } */
 
-    .robotoCondensed {
+    /* .robotoCondensed {
         font-family: 'Roboto Condensed', sans-serif;
-    }
+    } */
 
     body {
-        font-size: 16px;
+        @apply text-[16px] md:text-[18px];
+        /* font-size: 20px; */
         font-family: 'Roboto Condensed', sans-serif;
     }
 
@@ -34,7 +35,7 @@
     }
 
     .beforeTattooText {
-        @apply text-slate-600 font-bold  pb-3  text-[16px];
+        @apply text-slate-600 font-bold  pb-3  text-[16px] md:text-[20px];
     }
 }
 
