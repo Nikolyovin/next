@@ -6,7 +6,7 @@ const Portfolio = () => {
     return (
         <section className='bg-slate-400 pt-[40px] pb-[60px] px-4 xl:h-[100vh]'>
             <Element name='portfolio'>
-                <h2 className='title'>Моё портфолио T</h2>
+                <h2 className='title'>Моё портфолио</h2>
                 <div className='flex items-start relative  pt-6 '>
                     <Slideshow />
                 </div>

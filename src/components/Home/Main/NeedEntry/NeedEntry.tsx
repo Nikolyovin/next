@@ -8,7 +8,7 @@ import NeedEntrySlider from './NeedEntrySlider'
 
 const NeedEntry = () => {
     return (
-        <section className='z-0 relative md:h-[50vh]'>
+        <section className='z-0 relative md:h-[50vh] xl:h-[100vh]'>
             <Element name='contactMeTop'>
                 {/* <img className=' object-contain ' src={photo} /> */}
                 <NeedEntrySlider />

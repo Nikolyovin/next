@@ -10,48 +10,48 @@ import 'swiper/css/pagination'
 import Image, { StaticImageData } from 'next/image'
 
 interface ISlide {
-  src: StaticImageData
+    src: StaticImageData
 }
 
 const NeedEntrySlider = () => {
-  const arrSlides: ISlide[] = [
-    {
-      src: slide1,
-    },
-    {
-      src: slide2,
-    },
-    {
-      src: slide3,
-    },
-    {
-      src: slide4,
-    },
-    {
-      src: slide5,
-    },
-  ]
+    const arrSlides: ISlide[] = [
+        {
+            src: slide1
+        },
+        {
+            src: slide2
+        },
+        {
+            src: slide3
+        },
+        {
+            src: slide4
+        },
+        {
+            src: slide5
+        }
+    ]
 
-  return (
-    <Swiper
-      modules={[Autoplay, EffectFade]}
-      loop={true}
-      slidesPerView={1}
-      autoplay={{
-        delay: 5000,
-        waitForTransition: false,
-        disableOnInteraction: false,
-      }}
-      onSlideChange={() => console.log('slide change')}
-      onSwiper={(swiper) => console.log(swiper)}
-    >
-      {arrSlides.map(({ src }, index) => (
-        <SwiperSlide key={index}>
-          <Image className='object-cover md:h-[50vh]' src={src} alt='photo' />
-        </SwiperSlide>
-      ))}
-    </Swiper>
-  )
+    return (
+        <Swiper
+            modules={[Autoplay, EffectFade]}
+            loop={true}
+            slidesPerView={1}
+            autoplay={{
+                delay: 5000,
+                waitForTransition: false,
+                disableOnInteraction: false
+            }}
+            onSlideChange={() => console.log('slide change')}
+            onSwiper={swiper => console.log(swiper)}
+        >
+            {arrSlides.map(({ src }, index) => (
+                <SwiperSlide key={index}>
+                    <Image className='object-cover md:h-[50vh] xl:h-[100vh]' src={src} alt='photo' />
+                </SwiperSlide>
+            ))}
+        </Swiper>
+    )
 }
 
 export default NeedEntrySlider
