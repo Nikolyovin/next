@@ -17,11 +17,15 @@ const Portfolio = () => {
                         создадим это вместе!
                     </p> */}
 
-                    <p className='text-slate-700  bold mb-2  '>Я подстраиваюсь под анатомию каждого клиента.</p>
-                    <p className='text-slate-700 bold  mb-2 '>
+                    <p className='text-slate-700  bold mb-2 amatic font-bold'>
+                        Я подстраиваюсь под анатомию каждого клиента.
+                    </p>
+                    <p className='text-slate-700 bold  mb-2 amatic font-bold'>
                         Некоторые большие проекты рисую на вашей коже без предварительного эскиза(фрихендом).
                     </p>
-                    <p className='text-slate-700 bold   '>В своей работе я использую натуральные оттенки цветов.</p>
+                    <p className='text-slate-700 bold   amatic font-bold'>
+                        В своей работе я использую натуральные оттенки цветов.
+                    </p>
                 </div>
             </Element>
         </section>
