@@ -6,10 +6,10 @@ import avatar from '../../../../../public/assets/avatar.jpg'
 const Profile = () => {
     return (
         // <div className='h-[100vh] overflow-hidden'>
-        <section className='md:flex'>
+        <section className='md:flex '>
             <div className='relative'>
                 <Image
-                    className='object-cover object-top w-full z-10 h-[50vh] md:h-full'
+                    className='object-cover object-top w-full z-10 h-[50vh] md:h-full xl:h-[100vh]'
                     // className='object-cover object-top w-full '
                     src={avatar}
                     alt='avatar'

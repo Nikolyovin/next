@@ -30,7 +30,7 @@
     }
 
     .title {
-        @apply font-bold text-[42px] md:text-[72px];
+        @apply font-bold text-[42px] md:text-[72px] xl:text-[100px];
         font-family: 'Amatic SC', cursive;
     }
 
