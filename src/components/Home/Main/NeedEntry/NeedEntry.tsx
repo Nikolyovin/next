@@ -12,7 +12,7 @@ const NeedEntry = () => {
         <section className='z-0 relative md:h-[50vh] xl:h-[100vh]'>
             <Element name='contactMeTop'>
                 {/* <img className=' object-contain ' src={bg1} /> */}
-                <Image className='object-cover' src={bg1} alt='photo' />
+                <Image className='object-cover md:h-[50vh] xl:h-[100vh]' src={bg1} alt='photo' />
                 {/* <NeedEntrySlider /> */}
                 <div className='absolute z-100  h-full  top-0 px-[20px] py-[30px]'>
                     <h3 className='title text-white flex-1 mb-5'>Что нужно для записи?</h3>
