@@ -1,17 +1,19 @@
 import React from 'react'
 import { IconButton, Typography } from '@mui/material'
-import photo from '../../../assets/IMG_3394.jpg'
+import bg1 from '../../../../../public/assets/bg1.jpg'
 import list2 from '../../../assets/list2.jpg'
 import { Element } from 'react-scroll'
 import ContactMeTopSlider from './NeedEntrySlider'
 import NeedEntrySlider from './NeedEntrySlider'
+import Image from 'next/image'
 
 const NeedEntry = () => {
     return (
         <section className='z-0 relative md:h-[50vh] xl:h-[100vh]'>
             <Element name='contactMeTop'>
-                {/* <img className=' object-contain ' src={photo} /> */}
-                <NeedEntrySlider />
+                {/* <img className=' object-contain ' src={bg1} /> */}
+                <Image className='object-cover' src={bg1} alt='photo' />
+                {/* <NeedEntrySlider /> */}
                 <div className='absolute z-100  h-full  top-0 px-[20px] py-[30px]'>
                     <h3 className='title text-white flex-1 mb-5'>Что нужно для записи?</h3>
                     <div className='flex flex-col justify-between '>

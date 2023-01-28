@@ -10,7 +10,7 @@ const ContactMe = () => {
         <section className='pt-[40px]'>
             <Element name='contactMeBottom'>
                 <h3 className='title flex-1 px-[20px] '>Как со мной связаться?</h3>
-                <p className='text-slate-900 font-bold pt-[40px] pb-[50px] px-[20px] text-[18px] md:text-[20px]'>
+                <p className='text-slate-900 pt-[40px] pb-[50px] px-[20px] text-[18px] md:text-[20px]'>
                     Переходите ниже по ссылкам, буду рада ответить на ваши вопросы!
                 </p>
                 <div className='flex justify-center pb-[50px]'>

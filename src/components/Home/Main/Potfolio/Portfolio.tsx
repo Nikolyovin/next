@@ -17,16 +17,14 @@ const Portfolio = () => {
                         создадим это вместе!
                     </p> */}
 
-                    <p className='text-slate-700  bold mb-2 amatic font-bold'>
+                    <p className='text-slate-700  bold mb-2 '>
                         При разработке и переноса трансфера на кожу я учитываю индивидуальные особенности строения тела,
                         наличие родинок и тд. Чтобы эскиз смотрелся гармонично.
                     </p>
-                    <p className='text-slate-700 bold  mb-2 amatic font-bold'>
+                    <p className='text-slate-700 bold  mb-2 '>
                         Некоторые большие проекты рисую на вашей коже без предварительного эскиза(фрихендом).
                     </p>
-                    <p className='text-slate-700 bold   amatic font-bold'>
-                        В своей работе я использую натуральные оттенки пигментов.
-                    </p>
+                    <p className='text-slate-700 bold '>В своей работе я использую натуральные оттенки пигментов.</p>
                 </div>
             </Element>
         </section>

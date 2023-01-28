@@ -1,7 +1,7 @@
 import { Card, CardContent } from '@mui/material'
 import Image from 'next/image'
 import { Element } from 'react-scroll'
-import photo from '../../../../../public/assets/DSC01021.jpg'
+import photo from '../../../../../public/assets/bg2.jpg'
 import ReminderSlideShow from './ReminderSlideShow'
 
 const Reminder = () => {
