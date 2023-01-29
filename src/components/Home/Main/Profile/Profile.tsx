@@ -29,7 +29,7 @@ const Profile = () => {
                     </div>
 
                     <Divider sx={{ width: '25%' }} />
-                    <p className='mt-2 text-slate-500 robotoCondensed amatic'>Рязань, Москва</p>
+                    <p className='mt-2 text-slate-500 robotoCondensed amatic'>Рязань, Москва, rtvth</p>
                     {/* <div className='flex justify-between'> */}
                     <p className='mt-3 mb-2 text-slate-500 FontText'>
                         Привет! Меня зовут Виктория и я мастер тату. Также являюсь членом Ассоциации Художников
