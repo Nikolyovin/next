@@ -10,10 +10,14 @@ export default function Document() {
                     href='https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap'
                     rel='stylesheet'
                 />
-                <link
-                    href='https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Sofia+Sans+Extra+Condensed:ital,wght@1,300&display=swap'
+                {/* <link
+                    href='https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700:ital,wght@1,300&display=swap'
                     rel='stylesheet'
-                />
+                /> */}
+                <link
+                    href='https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap'
+                    rel='stylesheet'
+                ></link>
                 <link
                     href='https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap'
                     rel='stylesheet'
