@@ -1,74 +1,92 @@
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Pagination, EffectFade, Autoplay, Lazy } from 'swiper'
+import img1 from '../../../../../public/assets/IMG_3682.jpg'
 import img2 from '../../../../../public/assets/IMG_3014.jpg'
 import img3 from '../../../../../public/assets/IMG_3179.jpg'
+import img4 from '../../../../../public/assets/IMG_3683.jpg'
 import img5 from '../../../../../public/assets/IMG_3207.jpg'
 import img6 from '../../../../../public/assets/IMG_3205.jpg'
 import img7 from '../../../../../public/assets/IMG_3266.jpg'
+import img8 from '../../../../../public/assets/IMG_3684.jpg'
 import 'swiper/css'
 import 'swiper/css/pagination'
 // import 'swiper/css/lazy'
 import Image, { StaticImageData } from 'next/image'
 
 interface ISlide {
-  src: StaticImageData
+    src: StaticImageData
 }
 
 const SlideShow = () => {
-  const arrSlides: ISlide[] = [
-    {
-      src: img3,
-    },
-    {
-      src: img2,
-    },
-    {
-      src: img5,
-    },
-    {
-      src: img6,
-    },
-    {
-      src: img7,
-    },
-  ]
+    const arrSlides: ISlide[] = [
+        {
+            src: img3
+        },
+        {
+            src: img7
+        },
+        {
+            src: img8
+        },
+        {
+            src: img2
+        },
+        {
+            src: img1
+        },
+        {
+            src: img4
+        },
+        {
+            src: img5
+        },
+        {
+            src: img6
+        }
+        // {
+        //     src: img7
+        // },
+        // {
+        //     src: img8
+        // }
+    ]
 
-  return (
-    <Swiper
-      modules={[Lazy, Pagination, EffectFade, Autoplay, Lazy]}
-      lazy={true}
-      spaceBetween={30}
-      slidesPerView={1}
-      breakpoints={{
-        640: { slidesPerView: 3 },
-      }}
-      pagination={{
-        dynamicBullets: true,
-        clickable: true,
-      }}
-      // scrollbar={{ draggable: true }}
-      onSlideChange={() => console.log('slide change')}
-      onSwiper={(swiper) => console.log(swiper)}
-    >
-      {arrSlides.map(({ src }, index) => (
-        <SwiperSlide key={index}>
-          {/* <img
+    return (
+        <Swiper
+            modules={[Lazy, Pagination, EffectFade, Autoplay, Lazy]}
+            lazy={true}
+            spaceBetween={30}
+            slidesPerView={1}
+            breakpoints={{
+                640: { slidesPerView: 3 }
+            }}
+            pagination={{
+                dynamicBullets: true,
+                clickable: true
+            }}
+            // scrollbar={{ draggable: true }}
+            onSlideChange={() => console.log('slide change')}
+            onSwiper={swiper => console.log(swiper)}
+        >
+            {arrSlides.map(({ src }, index) => (
+                <SwiperSlide key={index}>
+                    {/* <img
             className='slideImg z-0 h-full w-full border-4 border-white swiper-lazy'
             data-src={src.src}
             // alt='photo'
           /> */}
-          <Image
-            className='slideImg z-0 border-4 border-white'
-            width={358}
-            height={540}
-            src={src}
-            alt='photo'
-          />
-          {/* <div className='swiper-lazy-preloader swiper-lazy-preloader-white '></div> */}
-        </SwiperSlide>
-      ))}
-    </Swiper>
-  )
+                    <Image
+                        className='slideImg z-0 border-4 border-white'
+                        width={358}
+                        height={540}
+                        src={src}
+                        alt='photo'
+                    />
+                    {/* <div className='swiper-lazy-preloader swiper-lazy-preloader-white '></div> */}
+                </SwiperSlide>
+            ))}
+        </Swiper>
+    )
 }
 
 export default SlideShow
