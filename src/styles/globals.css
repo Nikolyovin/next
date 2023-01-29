@@ -20,6 +20,7 @@
     }
 
     .FontText {
+        @apply text-[16px] md:text-[18px];
         font-family: 'Sofia Sans', sans-serif;
     }
 
@@ -27,11 +28,11 @@
         font-family: 'Roboto Condensed', sans-serif;
     }
 
-    body {
+    /* body {
         @apply text-[16px] md:text-[18px];
-        /* font-size: 20px; */
+        
         font-family: 'Sofia Sans', sans-serif;
-    }
+    } */
 
     .title {
         @apply font-bold text-[42px] md:text-[72px] xl:text-[100px];
