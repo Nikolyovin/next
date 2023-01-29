@@ -29,14 +29,14 @@ const Profile = () => {
                     </div>
 
                     <Divider sx={{ width: '25%' }} />
-                    <h6 className='mt-2 text-slate-500 robotoCondensed amatic'>Рязань, Москва</h6>
+                    <p className='mt-2 text-slate-500 robotoCondensed amatic'>Рязань, Москва, rtvth</p>
                     {/* <div className='flex justify-between'> */}
-                    <span className='mt-3 mb-2 text-slate-500 FontText'>
+                    <p className='mt-3 mb-2 text-slate-500 FontText'>
                         Привет! Меня зовут Виктория и я мастер тату. Также являюсь членом Ассоциации Художников
                         Ботанического Искусства. Я очень люблю ботанику, и через свои работы чувствую гармонию с
                         природой.
-                    </span>
-                    <p className='mt-3 mb-6 text-slate-500 FontText'>
+                    </p>
+                    <p className='mt-3 mb-6 text-slate-500 '>
                         Люблю создавать красоту на теле своих клиентов и заряжать их своей энергией.Мои любимые стили -
                         это ботаника и микрореализм. Если вы хотите добавить что-то особенное в свою жизнь, давайте
                         создадим это вместе!
