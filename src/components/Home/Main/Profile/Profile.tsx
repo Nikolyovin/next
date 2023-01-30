@@ -7,7 +7,7 @@ const Profile = () => {
     return (
         // <div className='h-[100vh] overflow-hidden'>
         <section className='md:flex '>
-            <div className='relative w-[100vh]'>
+            <div className='relative w-full'>
                 <Image
                     className='object-cover object-top w-full z-10 h-[50vh] md:h-full xl:h-[100vh]'
                     // className='object-cover object-top w-full '
@@ -15,10 +15,10 @@ const Profile = () => {
                     alt='avatar'
                     priority
                 />
-                <div className='bg-white z-1 bottom-[-1px] p-[10px] w-full rounded-t-2xl absolute md:hidden'></div>
+                <div className='bg-white z-1 bottom-[-1px] p-[10px] w-full  rounded-t-2xl absolute md:hidden'></div>
             </div>
 
-            <div className=' bg-white  z-1 '>
+            <div className=' bg-white md:w-[140%] z-1 '>
                 <div className='px-4 bg-white'>
                     <div className='mb-3 mt-[-10px] md:mt-0'>
                         <h1 className='title'>Виктория Лёвина</h1>
