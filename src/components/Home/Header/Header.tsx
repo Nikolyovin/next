@@ -1,11 +1,12 @@
 import React from 'react'
-import logo from '../../../../public/assets/logo-white.png'
+import logo from '../../../../public/assets/IMG_3703.png'
 import { IconButton, SwipeableDrawer, Typography } from '@mui/material'
 import MenuIcon from '@mui/icons-material/Menu'
 import { useState } from 'react'
 import DrawerList from './DrawerList'
 import { VariantType } from '../../../types/types'
 import HeaderDesktop from './HeaderDesktop'
+import Image from 'next/image'
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState<boolean>(false)
@@ -26,7 +27,7 @@ const Header = () => {
     return (
         <>
             <header className='absolute flex z-20 px-3 justify-end items-center w-full h-[50px] md:hidden'>
-                {/* <img className='w-[40px] h-[40px]' src={logo.src} alt='logo' /> */}
+                {/* <Image className='pt-2' width={40} height={75} src={logo} alt='logo' /> */}
                 <IconButton onClick={onClick} sx={{ p: 0 }}>
                     <MenuIcon className='md: text-white' sx={{ fontSize: 34 }} />
                 </IconButton>
