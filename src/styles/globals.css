@@ -21,7 +21,7 @@
     }
 
     .FontText {
-        @apply text-[16px] md:text-[18px] italic font-light;
+        @apply text-[16px] md:text-[20px] italic font-light;
         font-family: 'Sofia Sans', sans-serif;
     }
 
@@ -30,7 +30,7 @@
     }
 
     body {
-        @apply text-[16px] md:text-[18px] FontText;
+        @apply text-[16px] md:text-[20px] FontText;
         /* font-family: 'Sofia Sans', sans-serif; */
     }
 
