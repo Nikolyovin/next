@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../../assets/logoWhite.png'
+import logo from '../../../../public/assets/logo-white.png'
 import { IconButton, SwipeableDrawer, Typography } from '@mui/material'
 import MenuIcon from '@mui/icons-material/Menu'
 import { useState } from 'react'
@@ -26,7 +26,7 @@ const Header = () => {
     return (
         <>
             <header className='absolute flex z-20 px-3 justify-end items-center w-full h-[50px] md:hidden'>
-                {/* <img className='w-[40px] h-[40px]' src={logo} alt='logo' /> */}
+                {/* <img className='w-[40px] h-[40px]' src={logo.src} alt='logo' /> */}
                 <IconButton onClick={onClick} sx={{ p: 0 }}>
                     <MenuIcon className='md: text-white' sx={{ fontSize: 34 }} />
                 </IconButton>
