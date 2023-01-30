@@ -9,7 +9,7 @@ import Image from 'next/image'
 
 const NeedEntry = () => {
     return (
-        <section className='z-0 relative md:h-[50vh] xl:h-[100vh]'>
+        <section className='z-0 relative md:h-[50vh] xl:h-[100%]'>
             <Element name='contactMeTop'>
                 {/* <img className=' object-contain ' src={bg1} /> */}
                 <Image className='object-cover md:h-[50vh] xl:h-[100vh]' src={bg1} alt='photo' />
