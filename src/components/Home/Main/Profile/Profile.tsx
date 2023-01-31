@@ -7,8 +7,8 @@ import avatar from '../../../../../public/assets/avatar.jpg'
 const Profile = () => {
     return (
         // <div className='h-[100vh] overflow-hidden'>
-        <section className='md:flex '>
-            <Element name='profile'>
+        <Element name='profile'>
+            <section className='md:flex '>
                 <div className='relative w-full'>
                     <Image
                         className='object-cover object-top w-full z-10 h-[50vh] md:h-full xl:h-[100vh]'
@@ -48,8 +48,8 @@ const Profile = () => {
                     </div>
                     {/* <div className='bggImage w-[100vh] h-[200px] '></div> */}
                 </div>
-            </Element>
-        </section>
+            </section>
+        </Element>
     )
 }
 
