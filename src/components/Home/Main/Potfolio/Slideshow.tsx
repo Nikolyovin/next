@@ -24,7 +24,6 @@ const SlideShow = () => {
         {
             src: img7
         },
-
         {
             src: img1
         },
@@ -43,12 +42,6 @@ const SlideShow = () => {
         {
             src: img2
         }
-        // {
-        //     src: img7
-        // },
-        // {
-        //     src: img8
-        // }
     ]
 
     return (

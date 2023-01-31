@@ -4,7 +4,7 @@ const BeforeTattoo = () => {
     return (
         <section className='py-[40px] px-[20px] '>
             <Element className='' name='beforeTattoo'>
-                <h3 className='title flex-1  pb-[40px]'>Как подготовиться к сеансу?</h3>
+                <h3 className='title flex-1  pb-[20px]'>Как подготовиться к сеансу?</h3>
 
                 <p className='beforeTattooText'>
                     Перед сеансом желательно покушать, на длительные сеансы можно взять перекус с собой.
