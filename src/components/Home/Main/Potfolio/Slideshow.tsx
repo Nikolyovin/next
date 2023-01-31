@@ -10,7 +10,6 @@ import img7 from '../../../../../public/assets/IMG_3266.jpg'
 import img8 from '../../../../../public/assets/IMG_3684.jpg'
 import 'swiper/css'
 import 'swiper/css/pagination'
-// import 'swiper/css/lazy'
 import Image, { StaticImageData } from 'next/image'
 
 interface ISlide {
@@ -64,17 +63,11 @@ const SlideShow = () => {
                 dynamicBullets: true,
                 clickable: true
             }}
-            // scrollbar={{ draggable: true }}
             onSlideChange={() => console.log('slide change')}
             onSwiper={swiper => console.log(swiper)}
         >
             {arrSlides.map(({ src }, index) => (
                 <SwiperSlide key={index}>
-                    {/* <img
-            className='slideImg z-0 h-full w-full border-4 border-white swiper-lazy'
-            data-src={src.src}
-            // alt='photo'
-          /> */}
                     <Image
                         className='slideImg z-0 border-4 border-white'
                         width={358}
@@ -82,7 +75,6 @@ const SlideShow = () => {
                         src={src}
                         alt='photo'
                     />
-                    {/* <div className='swiper-lazy-preloader swiper-lazy-preloader-white '></div> */}
                 </SwiperSlide>
             ))}
         </Swiper>

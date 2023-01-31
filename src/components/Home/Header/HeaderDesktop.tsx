@@ -1,11 +1,11 @@
 import React from 'react'
-import logo from '../../assets/logoWhite.png'
 import { AppBar, Box, Button, IconButton, Menu, MenuItem, SwipeableDrawer, Typography } from '@mui/material'
+import logoGreen from '../../../../public/assets/IMG_3703.png'
 import MenuIcon from '@mui/icons-material/Menu'
 import CloseIcon from '@mui/icons-material/Close'
-import { useState } from 'react'
 import { arrButtons } from '@/common/index'
 import { Link } from 'react-scroll'
+import { Image } from '@mui/icons-material'
 
 const HeaderDesktop = () => {
     const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null)
@@ -18,10 +18,10 @@ const HeaderDesktop = () => {
 
     return (
         <>
-            {/* <header className='bg-slate-400 flex px-3 justify-end items-center w-full h-[50px] hidden md:block'></header> */}
             <div className='hidden md:block'>
                 <AppBar className='px-3 w-full h-[50px] ' position='relative' color='inherit'>
                     <div className='flex justify-end w-full h-full'>
+                        {/* <img className='pt-2' src={logoGreen.src} alt='logo' /> */}
                         {!open ? (
                             <IconButton className='' onClick={handleClick} sx={{ p: 0 }}>
                                 <MenuIcon className='' sx={{ fontSize: 34 }} />

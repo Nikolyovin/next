@@ -3,9 +3,6 @@
 @tailwind utilities;
 
 @layer components {
-    /* .bggImage {
-        background-image: url('https://img.freepik.com/free-photo/tropical-green-leaves-background_53876-88891.jpg');
-    } */
 
     .slideImg {
         @apply object-cover rounded-2xl;
@@ -31,12 +28,10 @@
 
     body {
         @apply text-[16px] md:text-[20px] FontText;
-        /* font-family: 'Sofia Sans', sans-serif; */
     }
 
     .title {
         @apply amatic font-bold text-[42px] md:text-[72px] xl:text-[100px];
-        /* font-family: 'Amatic SC', cursive; */
     }
 
     .beforeTattooText {

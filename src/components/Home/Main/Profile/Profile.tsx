@@ -6,13 +6,11 @@ import avatar from '../../../../../public/assets/avatar.jpg'
 
 const Profile = () => {
     return (
-        // <div className='h-[100vh] overflow-hidden'>
         <Element name='profile'>
             <section className='md:flex '>
                 <div className='relative w-full'>
                     <Image
                         className='object-cover object-top w-full z-10 h-[50vh] md:h-full xl:h-[100vh]'
-                        // className='object-cover object-top w-full '
                         src={avatar}
                         alt='avatar'
                         priority
@@ -33,8 +31,7 @@ const Profile = () => {
                         </div>
 
                         <Divider sx={{ width: '25%' }} />
-                        <p className=' mt-2 text-slate-500'>Рязань, Москва</p>
-                        {/* <div className='flex justify-between'> */}
+                        <p className=' mt-2 text-slate-500'>Рязань</p>
                         <p className='mt-3 mb-2 text-slate-500 FontText'>
                             Привет! Меня зовут Виктория и я мастер тату. Также являюсь членом Ассоциации Художников
                             Ботанического Искусства. Я очень люблю ботанику, и через свои работы чувствую гармонию с
@@ -46,7 +43,6 @@ const Profile = () => {
                             давайте создадим это вместе!
                         </p>
                     </div>
-                    {/* <div className='bggImage w-[100vh] h-[200px] '></div> */}
                 </div>
             </section>
         </Element>
