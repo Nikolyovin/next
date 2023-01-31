@@ -8,6 +8,7 @@ import img5 from '../../../../../public/assets/IMG_3207.jpg'
 import img6 from '../../../../../public/assets/IMG_3205.jpg'
 import img7 from '../../../../../public/assets/IMG_3266.jpg'
 import img8 from '../../../../../public/assets/IMG_3684.jpg'
+import img9 from '../../../../../public/assets/IMG_3706.jpg'
 import 'swiper/css'
 import 'swiper/css/pagination'
 import Image, { StaticImageData } from 'next/image'
@@ -18,6 +19,9 @@ interface ISlide {
 
 const SlideShow = () => {
     const arrSlides: ISlide[] = [
+        {
+            src: img9
+        },
         {
             src: img3
         },

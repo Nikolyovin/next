@@ -4,6 +4,9 @@ export default function Document() {
     return (
         <Html lang='en'>
             <Head>
+                {/* <link rel='shortcut icon' href='../../public/favicon.ico' /> */}
+                <link rel='shortcut icon' href='/../../public/assets/favicon.ico' />
+                <link rel='icon' type='image/png' sizes='32x32' href='/../../public/assets/favicon-32x32.png' />
                 <link
                     href='https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap'
                     rel='stylesheet'
